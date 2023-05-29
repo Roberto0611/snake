@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!--Title-->
     <title>Snake</title>
+
 </head>
 <body>
-    
-    <p id="score"> Score: xxx</p>
 
-    <div class="gameBox" id="gameBox">
-
+    <div class="HUD">
+        <p class="text" id="score"> Score:</p>
+        <p class="text" id="highScore"> High score:</p>
     </div>
 
-    
-    
+    <div class="gameBox" id="gameBox">
+        <p class="fruit" id="fruit"></p>
+        <p class="snake" id="snake"></p>
+    </div>
+
 </body>
 </html>
