@@ -1,17 +1,18 @@
-//get fruit position
+//get fruit 
 
-    //get fruit and styles
-    let fruit = document.getElementById('fruit');
-    let computedStyle = getComputedStyle(fruit);
+let fruit = document.getElementById('fruit');
+let computedStyle = getComputedStyle(fruit);
 
-    //get X position of the fruit
-    let fruitX = computedStyle.left;
-    let fruitXNumber = parseFloat(fruitX);
-    console.log("the X position of the fruit is:" + fruitXNumber);
 
-    //get Y position of the fruit
-    let fruitY = computedStyle.bottom;
-    let fruitYNumber = parseFloat(fruitY);
-    console.log("the Y position of the fruit is:" + fruitYNumber);
+//Randomize fruit position
+function RandomFruit(maxX, maxY){
     
-//////////////////////////////////////////////////////////////////////
+    let posX = getRandomNumber(0, maxX);
+    fruit.style.left = posX + 'px';
+    console.log("the X position of the fruit is:" + posX);
+
+    //randomise & change pos Y
+    let posY = getRandomNumber(-213, maxY);
+    fruit.style.bottom = posY + 'px';
+    console.log("the Y position of the fruit is:" + posY);
+}
