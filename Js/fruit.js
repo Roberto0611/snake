@@ -1,3 +1,5 @@
+//Made by: Roberto Ochoa Cuevas
+
 //get fruit 
 
 let fruit = document.getElementById('fruit');

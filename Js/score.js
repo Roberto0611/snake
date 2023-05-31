@@ -1,3 +1,5 @@
+//Made by: Roberto Ochoa Cuevas
+
 //variables
 let score = 0;
 let highScore = 0;
